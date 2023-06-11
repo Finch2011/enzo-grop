@@ -414,6 +414,8 @@ h4{
         justify-content: space-between;
         align-items: center;
         margin-top: 100px;
+        max-width: 900px;
+        margin: 0 auto;
     }
     .masks-2 {
         margin-top: 50px;
