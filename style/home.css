@@ -49,7 +49,12 @@ a{
     text-align: center;
     font-size: 14px;
 }
-
+.master{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .imgs {
     width: 80px;
 }
@@ -253,6 +258,7 @@ a{
 }
 .car {
     width: 380px;
+    margin-right: -15px;
 
 }
 .information {
@@ -276,10 +282,55 @@ a{
 .body .body-img{
     display: none;
 }
-
+.img-call img{
+    width: 460px;
+    margin-right: 10px;
+}
+.call{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.logo-call{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--wight);
+    border-radius:40px ;
+    margin-top: 100px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--wight);
+}
+h4{
+    color: var(--wight);
+}
+.h4-2{
+    display: none;
+}
+.h4-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (min-width:900px) {
     main {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 20px auto;
     }
     #mobile-nav{
@@ -439,7 +490,8 @@ a{
     .desktop-footer {
         display: flex;
         justify-content: space-between;
-        width: 910px;
+        align-items: center;
+        width: 1200px;
         margin-top: 150px;
     }
     .information-footer {
@@ -459,6 +511,7 @@ a{
     .ul-s ul{
         list-style: none;
         text-align: end;
+        margin-bottom: 40px;
         color: var(--wight);
     }
     .fasi-magasi {
@@ -476,5 +529,61 @@ a{
         margin-top: 25px;
         margin-bottom: 25px;
     }
-
+    .img-call img{
+        width: 800px;
+    }
+    .img-call{
+        margin-left: -200px;
+    }
+    .call{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 1200px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text-call{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        color: var(--wight);
+    }
+    .logo-call{
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+        align-items: center;   
+    }
+    .h4-1{
+        display: none;
+    }
+    .h4-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .h4-2 img{
+        margin-top: 10px;
+    }
+    .items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .item{
+        width: 40%;
+    }
+    h6{
+        text-align: center;
+    }
+    hr{
+        width: 400px;
+    }
+    
 }
